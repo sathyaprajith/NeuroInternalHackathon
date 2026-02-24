@@ -1,0 +1,57 @@
+/* App.css */
+:root {
+  --primary-red: #9b1c1c;
+  --light-gray: #f1f1f1;
+  --medium-gray: #e5e5e5;
+  --dark-gray: #333333;
+  --text-gray: #666666;
+}
+
+/* Global focus styles for inputs, selects, and textareas */
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none !important;
+  border-color: var(--primary-red) !important;
+  box-shadow: 0 0 0 3px rgba(155, 28, 28, 0.15) !important;
+}
+
+.react-select-container .react-select__control--is-focused {
+  outline: none !important;
+  border-color: var(--primary-red) !important;
+  box-shadow: 0 0 0 3px rgba(155, 28, 28, 0.15) !important;
+}
+
+#root {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+/* Stepper pulse animation for active step */
+@keyframes stepPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(155, 28, 28, 0.4); }
+  50% { box-shadow: 0 0 0 6px rgba(155, 28, 28, 0); }
+}
+
+.step-active {
+  animation: stepPulse 2s ease-in-out infinite;
+}
+
+/* Form card */
+.form-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08), 0 1px 4px rgba(0,0,0,0.04);
+  padding: 2rem;
+}
+
+/* Input base styling */
+input, select, textarea {
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.read-the-docs {
+  color: #888;
+}
