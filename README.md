@@ -1,4 +1,4 @@
-# NeuroAssess
+# Neuro
 
 A clinical report generation tool for neuropsychological assessments. Built for psychologists and clinicians to quickly generate standardized IQ assessment reports with automated scoring, norm-table lookups, and downloadable PDF/DOCX outputs.
 
